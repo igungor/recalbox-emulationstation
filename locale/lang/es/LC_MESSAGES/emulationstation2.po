@@ -191,6 +191,9 @@ msgstr "VOLVER"
 msgid " GAMES AVAILABLE"
 msgstr " JUEGOS DISPONIBLES"
 
+msgid " GAME AVAILABLE"
+msgstr ""
+
 #: es-app/src/guis/GuiGamelistOptions.cpp
 msgid "JUMP TO LETTER"
 msgstr "IR A LA LETRA"

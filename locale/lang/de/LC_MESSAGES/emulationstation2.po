@@ -197,6 +197,9 @@ msgstr "ZURÜCK"
 msgid " GAMES AVAILABLE"
 msgstr " VERFÜGBARE SPIELE"
 
+msgid " GAME AVAILABLE"
+msgstr ""
+
 #: es-app/src/guis/GuiGamelistOptions.cpp
 msgid "JUMP TO LETTER"
 msgstr "SPRING ZU BUCHSTABE"
