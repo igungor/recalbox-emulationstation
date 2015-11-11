@@ -226,8 +226,13 @@ void SystemView::onCursorChanged(const CursorState& state)
 	setAnimation(infoFadeOut, 0, [this, gameCount, favoritesCount] {
 		std::stringstream ss;
 
-		// only display a game count if there are at least 2 games
-		if (gameCount > 1)
+        // show the text even if there is at least 1 game. otherwise it is not
+        // elegant to show a bar appearing with a beautiful animation but there is no text.
+        if (gameCount == 1)
+		{
+			ss << gameCount << boost::locale::gettext(" GAME AVAILABLE");
+		}
+        else if (gameCount > 1)
 		{
 			ss << gameCount << boost::locale::gettext(" GAMES AVAILABLE");
 		}
