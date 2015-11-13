@@ -191,6 +191,9 @@ msgstr "ATZERA EGIN"
 msgid " GAMES AVAILABLE"
 msgstr " JOKU ERABILGARRIAK"
 
+msgid " GAME AVAILABLE"
+msgstr ""
+
 #: es-app/src/guis/GuiGamelistOptions.cpp
 msgid "JUMP TO LETTER"
 msgstr "LETRARA JOAN"
