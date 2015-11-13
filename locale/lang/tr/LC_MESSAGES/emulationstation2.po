@@ -270,10 +270,10 @@ msgid "JUMP TO LETTER"
 msgstr "ŞU HARFE GİT"
 
 msgid "SORT GAMES BY"
-msgstr "SIRALAMA KRİTERI"
+msgstr "SIRALAMA KRİTERİ"
 
 msgid "EDIT THIS GAME'S METADATA"
-msgstr "OYUNUN BİLGİLERİNİ DÜZENLE"
+msgstr "OYUN BİLGİLERİNİ DÜZENLE"
 
 #: es-app/src/guis/GuiMetaDataEd.cpp
 msgid "EDIT METADATA"
