@@ -1,0 +1,158 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	Development	/5e8b8ff/
+BAND_HEIGHT	SystemView.cpp	/^#define BAND_HEIGHT /;"	d	file:
+BasicGameListView	gamelist/BasicGameListView.cpp	/^BasicGameListView::BasicGameListView(Window* window, FileData* root)$/;"	f	class:BasicGameListView
+BasicGameListView	gamelist/BasicGameListView.h	/^class BasicGameListView : public ISimpleGameListView$/;"	c
+DetailedGameListView	gamelist/DetailedGameListView.cpp	/^DetailedGameListView::DetailedGameListView(Window* window, FileData* root, SystemData* system) : $/;"	f	class:DetailedGameListView
+DetailedGameListView	gamelist/DetailedGameListView.h	/^class DetailedGameListView : public BasicGameListView$/;"	c
+GAME_LIST	ViewController.h	/^		GAME_LIST$/;"	e	enum:ViewController::ViewMode
+GridGameListView	gamelist/GridGameListView.cpp	/^GridGameListView::GridGameListView(Window* window, FileData* root) : ISimpleGameListView(window, root),$/;"	f	class:GridGameListView
+GridGameListView	gamelist/GridGameListView.h	/^class GridGameListView : public ISimpleGameListView$/;"	c
+IGameListView	gamelist/IGameListView.h	/^	IGameListView(Window* window, FileData* root) : GuiComponent(window), mRoot(root)$/;"	f	class:IGameListView
+IGameListView	gamelist/IGameListView.h	/^class IGameListView : public GuiComponent$/;"	c
+ISimpleGameListView	gamelist/ISimpleGameListView.cpp	/^ISimpleGameListView::ISimpleGameListView(Window* window, FileData* root) : IGameListView(window, root),$/;"	f	class:ISimpleGameListView
+ISimpleGameListView	gamelist/ISimpleGameListView.h	/^class ISimpleGameListView : public IGameListView$/;"	c
+LOGO_PADDING	SystemView.cpp	/^#define LOGO_PADDING /;"	d	file:
+NOTHING	ViewController.h	/^		NOTHING,$/;"	e	enum:ViewController::ViewMode
+SELECTED_SCALE	SystemView.cpp	/^#define SELECTED_SCALE /;"	d	file:
+START_SCREEN	ViewController.h	/^		START_SCREEN,$/;"	e	enum:ViewController::ViewMode
+SYSTEM_SELECT	ViewController.h	/^		SYSTEM_SELECT,$/;"	e	enum:ViewController::ViewMode
+State	ViewController.h	/^	struct State$/;"	s	class:ViewController
+SystemView	SystemView.cpp	/^SystemView::SystemView(Window* window) : IList<SystemViewData, SystemData*>(window, LIST_SCROLL_STYLE_SLOW, LIST_ALWAYS_LOOP),$/;"	f	class:SystemView
+SystemView	SystemView.h	/^class SystemView : public IList<SystemViewData, SystemData*>$/;"	c
+SystemViewData	SystemView.h	/^struct SystemViewData$/;"	s
+ViewController	ViewController.cpp	/^ViewController::ViewController(Window* window)$/;"	f	class:ViewController
+ViewController	ViewController.h	/^class ViewController : public GuiComponent$/;"	c
+ViewMode	ViewController.h	/^	enum ViewMode$/;"	g	class:ViewController
+backgroundExtras	SystemView.h	/^	std::shared_ptr<ThemeExtras> backgroundExtras;$/;"	m	struct:SystemViewData
+get	ViewController.cpp	/^ViewController* ViewController::get()$/;"	f	class:ViewController
+getCursor	gamelist/BasicGameListView.cpp	/^FileData* BasicGameListView::getCursor()$/;"	f	class:BasicGameListView
+getCursor	gamelist/GridGameListView.cpp	/^FileData* GridGameListView::getCursor()$/;"	f	class:GridGameListView
+getGameListView	ViewController.cpp	/^std::shared_ptr<IGameListView> ViewController::getGameListView(SystemData* system)$/;"	f	class:ViewController
+getHelpPrompts	SystemView.cpp	/^std::vector<HelpPrompt> SystemView::getHelpPrompts()$/;"	f	class:SystemView
+getHelpPrompts	ViewController.cpp	/^std::vector<HelpPrompt> ViewController::getHelpPrompts()$/;"	f	class:ViewController
+getHelpPrompts	gamelist/BasicGameListView.cpp	/^std::vector<HelpPrompt> BasicGameListView::getHelpPrompts()$/;"	f	class:BasicGameListView
+getHelpPrompts	gamelist/DetailedGameListView.cpp	/^std::vector<HelpPrompt> DetailedGameListView::getHelpPrompts()$/;"	f	class:DetailedGameListView
+getHelpPrompts	gamelist/GridGameListView.cpp	/^std::vector<HelpPrompt> GridGameListView::getHelpPrompts()$/;"	f	class:GridGameListView
+getHelpStyle	SystemView.cpp	/^HelpStyle SystemView::getHelpStyle()$/;"	f	class:SystemView
+getHelpStyle	ViewController.cpp	/^HelpStyle ViewController::getHelpStyle()$/;"	f	class:ViewController
+getHelpStyle	gamelist/IGameListView.cpp	/^HelpStyle IGameListView::getHelpStyle()$/;"	f	class:IGameListView
+getMDLabels	gamelist/DetailedGameListView.cpp	/^std::vector<TextComponent*> DetailedGameListView::getMDLabels()$/;"	f	class:DetailedGameListView
+getMDValues	gamelist/DetailedGameListView.cpp	/^std::vector<GuiComponent*> DetailedGameListView::getMDValues()$/;"	f	class:DetailedGameListView
+getName	gamelist/BasicGameListView.h	/^	virtual const char* getName() const override { return "basic"; }$/;"	f	class:BasicGameListView
+getName	gamelist/DetailedGameListView.h	/^	virtual const char* getName() const override { return "detailed"; }$/;"	f	class:DetailedGameListView
+getName	gamelist/GridGameListView.h	/^	virtual const char* getName() const override { return "grid"; }$/;"	f	class:GridGameListView
+getRoot	gamelist/IGameListView.h	/^	inline FileData* getRoot() const { return mRoot; }$/;"	f	class:IGameListView
+getState	ViewController.h	/^	inline const State& getState() const { return mState; }$/;"	f	class:ViewController
+getSystem	ViewController.h	/^		inline SystemData* getSystem() const { assert(viewing == GAME_LIST || viewing == SYSTEM_SELECT); return system; }$/;"	f	struct:ViewController::State
+getSystemId	ViewController.cpp	/^int ViewController::getSystemId(SystemData* system)$/;"	f	class:ViewController
+getSystemListView	ViewController.cpp	/^std::shared_ptr<SystemView> ViewController::getSystemListView()$/;"	f	class:ViewController
+getTheme	gamelist/IGameListView.h	/^	inline const std::shared_ptr<ThemeData>& getTheme() const { return mTheme; }$/;"	f	class:IGameListView
+goToGameList	ViewController.cpp	/^void ViewController::goToGameList(SystemData* system)$/;"	f	class:ViewController
+goToNextGameList	ViewController.cpp	/^void ViewController::goToNextGameList()$/;"	f	class:ViewController
+goToPrevGameList	ViewController.cpp	/^void ViewController::goToPrevGameList()$/;"	f	class:ViewController
+goToStart	ViewController.cpp	/^void ViewController::goToStart()$/;"	f	class:ViewController
+goToSystem	SystemView.cpp	/^void SystemView::goToSystem(SystemData* system, bool animate)$/;"	f	class:SystemView
+goToSystemView	ViewController.cpp	/^void ViewController::goToSystemView(SystemData* system)$/;"	f	class:ViewController
+init	ViewController.cpp	/^void ViewController::init(Window* window)$/;"	f	class:ViewController
+initMDLabels	gamelist/DetailedGameListView.cpp	/^void DetailedGameListView::initMDLabels()$/;"	f	class:DetailedGameListView
+initMDValues	gamelist/DetailedGameListView.cpp	/^void DetailedGameListView::initMDValues()$/;"	f	class:DetailedGameListView
+input	SystemView.cpp	/^bool SystemView::input(InputConfig* config, Input input)$/;"	f	class:SystemView
+input	ViewController.cpp	/^bool ViewController::input(InputConfig* config, Input input)$/;"	f	class:ViewController
+input	gamelist/GridGameListView.cpp	/^bool GridGameListView::input(InputConfig* config, Input input)$/;"	f	class:GridGameListView
+input	gamelist/IGameListView.cpp	/^bool IGameListView::input(InputConfig* config, Input input)$/;"	f	class:IGameListView
+input	gamelist/ISimpleGameListView.cpp	/^bool ISimpleGameListView::input(InputConfig* config, Input input)$/;"	f	class:ISimpleGameListView
+lastSystem	SystemView.h	/^        SystemData * lastSystem;$/;"	m	class:SystemView
+launch	ViewController.cpp	/^void ViewController::launch(FileData* game, Eigen::Vector3f center)$/;"	f	class:ViewController
+launch	gamelist/BasicGameListView.cpp	/^void BasicGameListView::launch(FileData* game)$/;"	f	class:BasicGameListView
+launch	gamelist/DetailedGameListView.cpp	/^void DetailedGameListView::launch(FileData* game)$/;"	f	class:DetailedGameListView
+launch	gamelist/GridGameListView.cpp	/^void GridGameListView::launch(FileData* game)$/;"	f	class:GridGameListView
+logo	SystemView.h	/^	std::shared_ptr<GuiComponent> logo;$/;"	m	struct:SystemViewData
+logoSelected	SystemView.h	/^	std::shared_ptr<GuiComponent> logoSelected;$/;"	m	struct:SystemViewData
+logoSize	SystemView.h	/^	inline Eigen::Vector2f logoSize() const { return Eigen::Vector2f(mSize.x() * 0.25f, mSize.y() * 0.155f); }$/;"	f	class:SystemView
+mBackground	gamelist/ISimpleGameListView.h	/^	ImageComponent mBackground;$/;"	m	class:ISimpleGameListView
+mCamOffset	SystemView.h	/^	float mCamOffset;$/;"	m	class:SystemView
+mCamera	ViewController.h	/^	Eigen::Affine3f mCamera;$/;"	m	class:ViewController
+mCurrentView	ViewController.h	/^	std::shared_ptr<GuiComponent> mCurrentView;$/;"	m	class:ViewController
+mCursorStack	gamelist/ISimpleGameListView.h	/^	std::stack<FileData*> mCursorStack;$/;"	m	class:ISimpleGameListView
+mDescContainer	gamelist/DetailedGameListView.h	/^	ScrollableContainer mDescContainer;$/;"	m	class:DetailedGameListView
+mDescription	gamelist/DetailedGameListView.h	/^	TextComponent mDescription;$/;"	m	class:DetailedGameListView
+mDeveloper	gamelist/DetailedGameListView.h	/^	TextComponent mDeveloper;$/;"	m	class:DetailedGameListView
+mExtrasCamOffset	SystemView.h	/^	float mExtrasCamOffset;$/;"	m	class:SystemView
+mExtrasFadeOpacity	SystemView.h	/^	float mExtrasFadeOpacity;$/;"	m	class:SystemView
+mFadeOpacity	ViewController.h	/^	float mFadeOpacity;$/;"	m	class:ViewController
+mFavorite	gamelist/DetailedGameListView.h	/^	TextComponent mFavorite;$/;"	m	class:DetailedGameListView
+mFavoriteChange	gamelist/ISimpleGameListView.h	/^   bool mFavoriteChange;$/;"	m	class:ISimpleGameListView
+mFavoritesOnly	ViewController.h	/^	bool mFavoritesOnly;$/;"	m	class:ViewController
+mGameListViews	ViewController.h	/^	std::map< SystemData*, std::shared_ptr<IGameListView> > mGameListViews;$/;"	m	class:ViewController
+mGenre	gamelist/DetailedGameListView.h	/^	TextComponent mGenre;$/;"	m	class:DetailedGameListView
+mGrid	gamelist/GridGameListView.h	/^	ImageGridComponent<FileData*> mGrid;$/;"	m	class:GridGameListView
+mHeaderImage	gamelist/ISimpleGameListView.h	/^	ImageComponent mHeaderImage;$/;"	m	class:ISimpleGameListView
+mHeaderText	gamelist/ISimpleGameListView.h	/^	TextComponent mHeaderText;$/;"	m	class:ISimpleGameListView
+mImage	gamelist/DetailedGameListView.h	/^	ImageComponent mImage;$/;"	m	class:DetailedGameListView
+mInvalidGameList	ViewController.h	/^	std::map<SystemData*, bool> mInvalidGameList;$/;"	m	class:ViewController
+mLastPlayed	gamelist/DetailedGameListView.h	/^	DateTimeComponent mLastPlayed;$/;"	m	class:DetailedGameListView
+mLblDeveloper	gamelist/DetailedGameListView.h	/^	TextComponent mLblRating, mLblReleaseDate, mLblDeveloper, mLblPublisher, mLblGenre, mLblPlayers, mLblLastPlayed, mLblPlayCount, mLblFavorite;$/;"	m	class:DetailedGameListView
+mLblFavorite	gamelist/DetailedGameListView.h	/^	TextComponent mLblRating, mLblReleaseDate, mLblDeveloper, mLblPublisher, mLblGenre, mLblPlayers, mLblLastPlayed, mLblPlayCount, mLblFavorite;$/;"	m	class:DetailedGameListView
+mLblGenre	gamelist/DetailedGameListView.h	/^	TextComponent mLblRating, mLblReleaseDate, mLblDeveloper, mLblPublisher, mLblGenre, mLblPlayers, mLblLastPlayed, mLblPlayCount, mLblFavorite;$/;"	m	class:DetailedGameListView
+mLblLastPlayed	gamelist/DetailedGameListView.h	/^	TextComponent mLblRating, mLblReleaseDate, mLblDeveloper, mLblPublisher, mLblGenre, mLblPlayers, mLblLastPlayed, mLblPlayCount, mLblFavorite;$/;"	m	class:DetailedGameListView
+mLblPlayCount	gamelist/DetailedGameListView.h	/^	TextComponent mLblRating, mLblReleaseDate, mLblDeveloper, mLblPublisher, mLblGenre, mLblPlayers, mLblLastPlayed, mLblPlayCount, mLblFavorite;$/;"	m	class:DetailedGameListView
+mLblPlayers	gamelist/DetailedGameListView.h	/^	TextComponent mLblRating, mLblReleaseDate, mLblDeveloper, mLblPublisher, mLblGenre, mLblPlayers, mLblLastPlayed, mLblPlayCount, mLblFavorite;$/;"	m	class:DetailedGameListView
+mLblPublisher	gamelist/DetailedGameListView.h	/^	TextComponent mLblRating, mLblReleaseDate, mLblDeveloper, mLblPublisher, mLblGenre, mLblPlayers, mLblLastPlayed, mLblPlayCount, mLblFavorite;$/;"	m	class:DetailedGameListView
+mLblRating	gamelist/DetailedGameListView.h	/^	TextComponent mLblRating, mLblReleaseDate, mLblDeveloper, mLblPublisher, mLblGenre, mLblPlayers, mLblLastPlayed, mLblPlayCount, mLblFavorite;$/;"	m	class:DetailedGameListView
+mLblReleaseDate	gamelist/DetailedGameListView.h	/^	TextComponent mLblRating, mLblReleaseDate, mLblDeveloper, mLblPublisher, mLblGenre, mLblPlayers, mLblLastPlayed, mLblPlayCount, mLblFavorite;$/;"	m	class:DetailedGameListView
+mList	gamelist/BasicGameListView.h	/^	TextListComponent<FileData*> mList;$/;"	m	class:BasicGameListView
+mLockInput	ViewController.h	/^	bool mLockInput;$/;"	m	class:ViewController
+mPlayCount	gamelist/DetailedGameListView.h	/^	TextComponent mPlayCount;$/;"	m	class:DetailedGameListView
+mPlayers	gamelist/DetailedGameListView.h	/^	TextComponent mPlayers;$/;"	m	class:DetailedGameListView
+mPublisher	gamelist/DetailedGameListView.h	/^	TextComponent mPublisher;$/;"	m	class:DetailedGameListView
+mRating	gamelist/DetailedGameListView.h	/^	RatingComponent mRating;$/;"	m	class:DetailedGameListView
+mReleaseDate	gamelist/DetailedGameListView.h	/^	DateTimeComponent mReleaseDate;$/;"	m	class:DetailedGameListView
+mRoot	gamelist/IGameListView.h	/^	FileData* mRoot;$/;"	m	class:IGameListView
+mState	ViewController.h	/^	State mState;$/;"	m	class:ViewController
+mSystem	gamelist/DetailedGameListView.h	/^	SystemData* mSystem;$/;"	m	class:DetailedGameListView
+mSystemInfo	SystemView.h	/^	TextComponent mSystemInfo;$/;"	m	class:SystemView
+mSystemListView	ViewController.h	/^	std::shared_ptr<SystemView> mSystemListView;$/;"	m	class:ViewController
+mTheme	gamelist/IGameListView.h	/^	std::shared_ptr<ThemeData> mTheme;$/;"	m	class:IGameListView
+mThemeExtras	gamelist/ISimpleGameListView.h	/^	ThemeExtras mThemeExtras;$/;"	m	class:ISimpleGameListView
+onCursorChanged	SystemView.cpp	/^void SystemView::onCursorChanged(const CursorState& state)$/;"	f	class:SystemView
+onFileChanged	ViewController.cpp	/^void ViewController::onFileChanged(FileData* file, FileChangeType change)$/;"	f	class:ViewController
+onFileChanged	gamelist/BasicGameListView.cpp	/^void BasicGameListView::onFileChanged(FileData* file, FileChangeType change)$/;"	f	class:BasicGameListView
+onFileChanged	gamelist/ISimpleGameListView.cpp	/^void ISimpleGameListView::onFileChanged(FileData* file, FileChangeType change)$/;"	f	class:ISimpleGameListView
+onThemeChanged	gamelist/BasicGameListView.cpp	/^void BasicGameListView::onThemeChanged(const std::shared_ptr<ThemeData>& theme)$/;"	f	class:BasicGameListView
+onThemeChanged	gamelist/DetailedGameListView.cpp	/^void DetailedGameListView::onThemeChanged(const std::shared_ptr<ThemeData>& theme)$/;"	f	class:DetailedGameListView
+onThemeChanged	gamelist/ISimpleGameListView.cpp	/^void ISimpleGameListView::onThemeChanged(const std::shared_ptr<ThemeData>& theme)$/;"	f	class:ISimpleGameListView
+playViewTransition	ViewController.cpp	/^void ViewController::playViewTransition()$/;"	f	class:ViewController
+populate	SystemView.cpp	/^void SystemView::populate()$/;"	f	class:SystemView
+populateList	gamelist/BasicGameListView.cpp	/^void BasicGameListView::populateList(const std::vector<FileData*>& files)$/;"	f	class:BasicGameListView
+populateList	gamelist/GridGameListView.cpp	/^void GridGameListView::populateList(const std::vector<FileData*>& files)$/;"	f	class:GridGameListView
+populateList	gamelist/ISimpleGameListView.h	/^	virtual inline void populateList(const std::vector<FileData*>& files) override {}$/;"	f	class:ISimpleGameListView
+preload	ViewController.cpp	/^void ViewController::preload()$/;"	f	class:ViewController
+reloadAll	ViewController.cpp	/^void ViewController::reloadAll()$/;"	f	class:ViewController
+reloadGameListView	ViewController.cpp	/^void ViewController::reloadGameListView(IGameListView* view, bool reloadTheme)$/;"	f	class:ViewController
+reloadGameListView	ViewController.h	/^	inline void reloadGameListView(SystemData* system, bool reloadTheme = false) { reloadGameListView(getGameListView(system).get(), reloadTheme); }$/;"	f	class:ViewController
+reloadGamesLists	ViewController.cpp	/^void ViewController::reloadGamesLists()$/;"	f	class:ViewController
+render	SystemView.cpp	/^void SystemView::render(const Eigen::Affine3f& parentTrans)$/;"	f	class:SystemView
+render	ViewController.cpp	/^void ViewController::render(const Eigen::Affine3f& parentTrans)$/;"	f	class:ViewController
+sInstance	ViewController.cpp	/^ViewController* ViewController::sInstance = NULL;$/;"	m	class:ViewController	file:
+sInstance	ViewController.h	/^	static ViewController* sInstance;$/;"	m	class:ViewController
+setAllInvalidGamesList	ViewController.cpp	/^void ViewController::setAllInvalidGamesList(SystemData* systemExclude)$/;"	f	class:ViewController
+setCursor	gamelist/BasicGameListView.cpp	/^void BasicGameListView::setCursor(FileData* cursor)$/;"	f	class:BasicGameListView
+setCursor	gamelist/GridGameListView.cpp	/^void GridGameListView::setCursor(FileData* file)$/;"	f	class:GridGameListView
+setInvalidGamesList	ViewController.cpp	/^void ViewController::setInvalidGamesList(SystemData* system)$/;"	f	class:ViewController
+setTheme	gamelist/IGameListView.cpp	/^void IGameListView::setTheme(const std::shared_ptr<ThemeData>& theme)$/;"	f	class:IGameListView
+system	ViewController.h	/^		SystemData* system;$/;"	m	struct:ViewController::State
+update	SystemView.cpp	/^void SystemView::update(int deltaTime)$/;"	f	class:SystemView
+update	ViewController.cpp	/^void ViewController::update(int deltaTime)$/;"	f	class:ViewController
+updateFavorite	ViewController.cpp	/^void ViewController::updateFavorite(SystemData* system, FileData* file)$/;"	f	class:ViewController
+updateInfoPanel	gamelist/BasicGameListView.h	/^	virtual inline void updateInfoPanel() override {}$/;"	f	class:BasicGameListView
+updateInfoPanel	gamelist/DetailedGameListView.cpp	/^void DetailedGameListView::updateInfoPanel()$/;"	f	class:DetailedGameListView
+updateInfoPanel	gamelist/ISimpleGameListView.h	/^	virtual inline void updateInfoPanel() override {}$/;"	f	class:ISimpleGameListView
+viewing	ViewController.h	/^		ViewMode viewing;$/;"	m	struct:ViewController::State
+~IGameListView	gamelist/IGameListView.h	/^	virtual ~IGameListView() {}$/;"	f	class:IGameListView
+~ISimpleGameListView	gamelist/ISimpleGameListView.h	/^	virtual ~ISimpleGameListView() {}$/;"	f	class:ISimpleGameListView
+~ViewController	ViewController.cpp	/^ViewController::~ViewController()$/;"	f	class:ViewController

@@ -243,28 +243,6 @@ bool RecalboxSystem::canUpdate() {
     }
 }
 
-bool RecalboxSystem::launchKodi(Window *window) {
-
-    LOG(LogInfo) << "Attempting to launch kodi...";
-
-
-    AudioManager::getInstance()->deinit();
-    VolumeControl::getInstance()->deinit();
-
-    window->deinit();
-
-    std::string command = "/recalbox/scripts/kodilauncher.sh";
-    int exitCode = system(command.c_str());
-
-    window->init();
-    VolumeControl::getInstance()->init();
-    AudioManager::getInstance()->resumeMusic();
-    window->normalizeNextUpdate();
-
-    return exitCode == 0;
-
-}
-
 bool RecalboxSystem::enableWifi(std::string ssid, std::string key) {
     std::ostringstream oss;
     oss << Settings::getInstance()->getString("RecalboxSettingScript") << " "

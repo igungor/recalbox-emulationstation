@@ -63,6 +63,4 @@ private:
 	unsigned int mTimeSinceLastInput;
 
 	bool mRenderedHelpPrompts;
-        
-        bool launchKodi;
 };
