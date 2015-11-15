@@ -20,7 +20,6 @@ public:
     unsigned long getFreeSpaceGB(std::string mountpoint);
     std::string getFreeSpaceInfo();
     bool isFreeSpaceLimit();
-    std::string getVersion();
     bool setAudioOutputDevice(std::string device);
     bool setOverscan(bool enable);
     bool setOverclock(std::string mode);

@@ -80,20 +80,6 @@ bool RecalboxSystem::isFreeSpaceLimit() {
 
 }
 
-std::string RecalboxSystem::getVersion() {
-    std::string version = Settings::getInstance()->getString("VersionFile");
-    if (version.size() > 0) {
-        std::ifstream ifs(version);
-
-        if (ifs.good()) {
-            std::string contents;
-            std::getline(ifs, contents);
-            return contents;
-        }
-    }
-    return "";
-}
-
 bool RecalboxSystem::setAudioOutputDevice(std::string device) {
     int commandValue = -1;
     int returnValue = false;

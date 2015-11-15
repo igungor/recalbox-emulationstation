@@ -77,9 +77,6 @@ void Settings::setDefaults() {
     mStringMap["ThemeSet"] = "";
     mStringMap["ScreenSaverBehavior"] = "dim";
     mStringMap["Scraper"] = "TheGamesDB";
-    mStringMap["UpdateCommand"] = "";
-    mStringMap["UpdateServer"] = "";
-    mStringMap["VersionFile"] = "";
     mStringMap["SharePartition"] = "";
     mStringMap["Lang"] = "en_US";
     mStringMap["INPUT P1"] = "DEFAULT";
@@ -89,7 +86,6 @@ void Settings::setDefaults() {
     mStringMap["Overclock"] = "none";
     mStringMap["RecalboxSettingScript"] = "/recalbox/scripts/recalbox-config.sh";
     mStringMap["RecalboxConfigScript"] = "";
-    mStringMap["LastVersionFile"] = "/root/update.done";
     mStringMap["VersionMessage"] = "/recalbox/recalbox.msg";
 
 
