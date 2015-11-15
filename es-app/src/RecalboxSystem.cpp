@@ -94,53 +94,6 @@ std::string RecalboxSystem::getVersion() {
     return "";
 }
 
-bool RecalboxSystem::needToShowVersionMessage() {
-    std::string versionFile = Settings::getInstance()->getString("LastVersionFile");
-    if (versionFile.size() > 0) {
-        std::ifstream lvifs(versionFile);
-        if (lvifs.good()) {
-            std::string lastVersion;
-            std::getline(lvifs, lastVersion);
-            std::string currentVersion = getVersion();
-            if (lastVersion == currentVersion) {
-                return false;
-            }
-        }
-    }
-    return true;
-}
-
-bool RecalboxSystem::versionMessageDisplayed() {
-    std::string versionFile = Settings::getInstance()->getString("LastVersionFile");
-    std::string currentVersion = getVersion();
-    std::ostringstream oss;
-    oss << "echo " << currentVersion << " > " << versionFile;
-    if (system(oss.str().c_str())) {
-        LOG(LogWarning) << "Error executing " << oss.str().c_str();
-        return false;
-    } else {
-        LOG(LogInfo) << "Version message displayed ok";
-        return true;
-    }
-
-    return false;
-}
-
-std::string RecalboxSystem::getVersionMessage() {
-    std::string versionMessageFile = Settings::getInstance()->getString("VersionMessage");
-    if (versionMessageFile.size() > 0) {
-        std::ifstream ifs(versionMessageFile);
-
-        if (ifs.good()) {
-            std::string contents((std::istreambuf_iterator<char>(ifs)),
-                                 std::istreambuf_iterator<char>());
-            return contents;
-        }
-    }
-    return "";
-
-}
-
 bool RecalboxSystem::setAudioOutputDevice(std::string device) {
     int commandValue = -1;
     int returnValue = false;
@@ -213,34 +166,11 @@ bool RecalboxSystem::setOverclock(std::string mode) {
 }
 
 
-bool RecalboxSystem::updateSystem() {
-    std::string updatecommand = Settings::getInstance()->getString("UpdateCommand");
-    if (updatecommand.size() > 0) {
-        int exitcode = system(updatecommand.c_str());
-        return exitcode == 0;
-    }
-    return false;
-}
-
 bool RecalboxSystem::ping() {
     std::string updateserver = Settings::getInstance()->getString("UpdateServer");
     std::string s("ping -c 1 " + updateserver);
     int exitcode = system(s.c_str());
     return exitcode == 0;
-}
-
-bool RecalboxSystem::canUpdate() {
-    std::ostringstream oss;
-    oss << Settings::getInstance()->getString("RecalboxSettingScript") << " " << "canupdate";
-    std::string command = oss.str();
-    LOG(LogInfo) << "Launching " << command;
-    if (system(command.c_str()) == 0) {
-        LOG(LogInfo) << "Can update ";
-        return true;
-    } else {
-        LOG(LogInfo) << "Cannot update ";
-        return false;
-    }
 }
 
 bool RecalboxSystem::enableWifi(std::string ssid, std::string key) {

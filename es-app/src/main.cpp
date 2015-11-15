@@ -303,22 +303,6 @@ int main(int argc, char* argv[])
 	// Recalbox config in settings for better performance
 	Settings::getInstance()->setBool("audio.bgmusic", std::string("1").compare(RecalboxSystem::getInstance()->getRecalboxConfig("audio.bgmusic")) == 0);
 
-
-	RecalboxSystem::getInstance()->getIpAdress();
-	// UPDATED VERSION MESSAGE
-	if(RecalboxSystem::getInstance()->needToShowVersionMessage()){
-		 window.pushGui(new GuiMsgBox(&window,
-		RecalboxSystem::getInstance()->getVersionMessage(),
-		"OK", [] {
-						RecalboxSystem::getInstance()->versionMessageDisplayed();
-					},"",nullptr,"",nullptr, ALIGN_LEFT));
-	}
-
-	// UPDATE CHECK THREAD
-	if(std::string("1").compare(RecalboxSystem::getInstance()->getRecalboxConfig("updates.enabled")) == 0){
-		NetworkThread * nthread = new NetworkThread(&window);
-	}
-
 	//run the command line scraper then quit
 	if(scrape_cmdline)
 	{

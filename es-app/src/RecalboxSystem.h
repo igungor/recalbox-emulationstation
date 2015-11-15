@@ -24,12 +24,7 @@ public:
     bool setAudioOutputDevice(std::string device);
     bool setOverscan(bool enable);
     bool setOverclock(std::string mode);
-    bool versionMessageDisplayed();
-    bool needToShowVersionMessage();
-    std::string getVersionMessage();
-    bool updateSystem();
     bool ping();
-    bool canUpdate();
     bool enableWifi(std::string ssid, std::string key);
     bool disableWifi();
     std::string getRecalboxConfig(std::string key);
