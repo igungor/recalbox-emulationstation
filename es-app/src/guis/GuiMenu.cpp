@@ -90,9 +90,6 @@ GuiMenu::GuiMenu(Window *window) : GuiComponent(window), mMenu(window, "MAIN MEN
 
                  auto s = new GuiSettings(mWindow, "SYSTEM SETTINGS");
 
-                 auto version = std::make_shared<TextComponent>(mWindow, RecalboxSystem::getInstance()->getVersion(),
-                                                                Font::get(FONT_SIZE_MEDIUM), 0x777777FF);
-                 s->addWithLabel("VERSION", version);
                  bool warning = RecalboxSystem::getInstance()->isFreeSpaceLimit();
                  auto space = std::make_shared<TextComponent>(mWindow,
                                                               RecalboxSystem::getInstance()->getFreeSpaceInfo(),
